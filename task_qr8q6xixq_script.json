@@ -1,0 +1,60 @@
+{
+  "title": "Plant Power Process",
+  "scenes": [
+    {
+      "id": 1,
+      "narration": "Hello! Photosynthesis is how plants, algae, and some bacteria create their own food. It's truly amazing!",
+      "duration": 9.22,
+      "imagePrompt": "A minimal flat infographic vector graphic depicting a sun radiating light onto a happy green plant. Energy symbols are flowing from the plant. Plain light green background.",
+      "summary": "What is Photosynthesis?",
+      "startTime": 0,
+      "endTime": 9.22,
+      "audioUrl": "/generated/task_qr8q6xixq_scene_1.wav",
+      "imageUrl": "/generated/task_qr8q6xixq_scene_1.png"
+    },
+    {
+      "id": 2,
+      "narration": "First, chlorophyll, the green stuff in plants, captures sunlight energy. It's like a tiny solar panel.",
+      "duration": 8.35,
+      "imagePrompt": "A minimal flat infographic vector graphic showing a stylized green leaf with small, green, circular chlorophyll molecules. Sun rays are being absorbed by the chlorophyll. Plain light yellow background.",
+      "summary": "Chlorophyll Captures Light",
+      "startTime": 9.22,
+      "endTime": 17.57,
+      "audioUrl": "/generated/task_qr8q6xixq_scene_2.wav",
+      "imageUrl": "/generated/task_qr8q6xixq_scene_2.png"
+    },
+    {
+      "id": 3,
+      "narration": "Next, this energy helps split water molecules. They break down into hydrogen and the oxygen we breathe!",
+      "duration": 8.16,
+      "imagePrompt": "A minimal flat infographic vector graphic illustrating a blue water drop splitting into smaller hydrogen and oxygen bubbles. The oxygen bubbles float upwards. Plain light blue background.",
+      "summary": "Water Splits, Oxygen",
+      "startTime": 17.57,
+      "endTime": 25.73,
+      "audioUrl": "/generated/task_qr8q6xixq_scene_3.wav",
+      "imageUrl": "/generated/task_qr8q6xixq_scene_3.png"
+    },
+    {
+      "id": 4,
+      "narration": "Then, carbon dioxide from the air combines with hydrogen. This forms glucose, the plant's sugary food.",
+      "duration": 8.98,
+      "imagePrompt": "A minimal flat infographic vector graphic showing a gray carbon dioxide molecule merging with small white hydrogen particles to form a hexagonal sugar (glucose) molecule. Plain light purple background.",
+      "summary": "CO2 Becomes Glucose",
+      "startTime": 25.73,
+      "endTime": 34.71,
+      "audioUrl": "/generated/task_qr8q6xixq_scene_4.wav",
+      "imageUrl": "/generated/task_qr8q6xixq_scene_4.png"
+    },
+    {
+      "id": 5,
+      "narration": "So, plants make food and oxygen, supporting nearly all life on Earth. It's super important!",
+      "duration": 7.61,
+      "imagePrompt": "A minimal flat infographic vector graphic showing a healthy tree at the center, surrounded by happy animals and humans. Arrows show oxygen flowing from the tree to animals, and energy symbols flowing from the tree to all life forms. Plain light orange background.",
+      "summary": "Sustains All Life",
+      "startTime": 34.71,
+      "endTime": 42.32,
+      "audioUrl": "/generated/task_qr8q6xixq_scene_5.wav",
+      "imageUrl": "/generated/task_qr8q6xixq_scene_5.png"
+    }
+  ]
+}
