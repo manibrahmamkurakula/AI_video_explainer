@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Power Process — AI Video Explainer</title>
+  <meta name="description" content="An interactive AI-generated educational video explaining photosynthesis through 5 animated scenes with live narration." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blob blob1"></div>
+  <div class="bg-blob blob2"></div>
+  <div class="bg-blob blob3"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌱</span>
+        <div class="logo-text">
+          <span class="logo-title">Plant Power Process</span>
+          <span class="logo-sub">AI Video Explainer</span>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="badge-dot"></span>
+        Photosynthesis
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="app-grid">
+
+      <!-- Left: Video + Timeline + Narration -->
+      <div class="left-panel">
+
+        <!-- Video Player -->
+        <div class="video-wrapper" id="videoWrapper">
+          <video id="mainVideo" preload="metadata" playsinline>
+            <source src="https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_final.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Custom Controls Overlay -->
+          <div class="video-overlay" id="videoOverlay">
+            <button class="play-btn-big" id="playBtnBig" aria-label="Play">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+
+          <!-- Scene label on video -->
+          <div class="video-scene-label" id="videoSceneLabel">
+            <span class="scene-num" id="sceneLabelNum">Scene 1</span>
+            <span class="scene-title-label" id="sceneLabelTitle">What is Photosynthesis?</span>
+          </div>
+
+          <!-- Custom Controls Bar -->
+          <div class="video-controls" id="videoControls">
+            <div class="progress-area">
+              <div class="progress-bar-wrap" id="progressBarWrap">
+                <div class="progress-bar-bg">
+                  <div class="progress-fill" id="progressFill"></div>
+                  <div class="progress-thumb" id="progressThumb"></div>
+                </div>
+                <!-- Scene markers -->
+                <div class="scene-markers" id="sceneMarkers"></div>
+              </div>
+              <div class="time-display">
+                <span id="currentTimeDisplay">0:00</span>
+                <span class="time-sep">/</span>
+                <span id="totalTimeDisplay">0:42</span>
+              </div>
+            </div>
+            <div class="controls-row">
+              <div class="controls-left">
+                <button class="ctrl-btn" id="playPauseBtn" aria-label="Play/Pause">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <svg class="icon-pause hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
+                <button class="ctrl-btn" id="skipBackBtn" aria-label="Skip back 5s">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/><text x="8" y="15" font-size="6" fill="currentColor">5</text></svg>
+                </button>
+                <button class="ctrl-btn" id="skipFwdBtn" aria-label="Skip forward 5s">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 13c0 3.31-2.69 6-6 6s-6-2.69-6-6 2.69-6 6-6v4l5-5-5-5v4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8h-2z"/></svg>
+                </button>
+                <div class="volume-wrap">
+                  <button class="ctrl-btn" id="muteBtn" aria-label="Mute">
+                    <svg class="icon-vol" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    <svg class="icon-mute hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                  </button>
+                  <input type="range" class="volume-slider" id="volumeSlider" min="0" max="1" step="0.05" value="1" aria-label="Volume" />
+                </div>
+              </div>
+              <div class="controls-right">
+                <button class="ctrl-btn speed-btn" id="speedBtn">1x</button>
+                <button class="ctrl-btn" id="fullscreenBtn" aria-label="Fullscreen">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-section glass-card">
+          <div class="section-label">📍 Scene Timeline</div>
+          <div class="timeline-track" id="timelineTrack">
+            <!-- Dynamically generated -->
+          </div>
+        </div>
+
+        <!-- Live Narration -->
+        <div class="narration-section glass-card" id="narrationCard">
+          <div class="section-label">💬 Live Narration</div>
+          <div class="narration-text" id="narrationText">
+            Loading narration...
+          </div>
+          <div class="narration-meta" id="narrationMeta">Scene 1 · 0:00 – 0:09</div>
+        </div>
+
+      </div>
+
+      <!-- Right: Scene Navigation -->
+      <div class="right-panel">
+        <div class="scene-nav glass-card">
+          <div class="section-label">🎬 Scenes</div>
+          <div class="scene-list" id="sceneList">
+            <!-- Dynamically generated -->
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-card glass-card">
+          <div class="section-label">📊 Video Stats</div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-value">5</span>
+              <span class="stat-label">Scenes</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">42s</span>
+              <span class="stat-label">Duration</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">AI</span>
+              <span class="stat-label">Generated</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">HD</span>
+              <span class="stat-label">Quality</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scene Gallery -->
+    <div class="gallery-section">
+      <div class="section-label gallery-label">🖼️ Scene Gallery</div>
+      <div class="gallery-strip" id="galleryStrip">
+        <!-- Dynamically generated -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Built with ❤️ by <a href="https://github.com/manibrahmamkurakula" target="_blank">Mani Brahmam Kurakula</a> · AI Video Explainer · 🌱 Plant Power Process</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
