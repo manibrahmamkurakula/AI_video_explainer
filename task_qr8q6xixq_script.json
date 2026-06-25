@@ -9,8 +9,8 @@
       "summary": "What is Photosynthesis?",
       "startTime": 0,
       "endTime": 9.22,
-      "audioUrl": "/generated/task_qr8q6xixq_scene_1.wav",
-      "imageUrl": "/generated/task_qr8q6xixq_scene_1.png"
+      "audioUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_1.wav",
+      "imageUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_1.png"
     },
     {
       "id": 2,
@@ -20,8 +20,8 @@
       "summary": "Chlorophyll Captures Light",
       "startTime": 9.22,
       "endTime": 17.57,
-      "audioUrl": "/generated/task_qr8q6xixq_scene_2.wav",
-      "imageUrl": "/generated/task_qr8q6xixq_scene_2.png"
+      "audioUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_2.wav",
+      "imageUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_2.png"
     },
     {
       "id": 3,
@@ -31,8 +31,8 @@
       "summary": "Water Splits, Oxygen",
       "startTime": 17.57,
       "endTime": 25.73,
-      "audioUrl": "/generated/task_qr8q6xixq_scene_3.wav",
-      "imageUrl": "/generated/task_qr8q6xixq_scene_3.png"
+      "audioUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_3.wav",
+      "imageUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_3.png"
     },
     {
       "id": 4,
@@ -42,8 +42,8 @@
       "summary": "CO2 Becomes Glucose",
       "startTime": 25.73,
       "endTime": 34.71,
-      "audioUrl": "/generated/task_qr8q6xixq_scene_4.wav",
-      "imageUrl": "/generated/task_qr8q6xixq_scene_4.png"
+      "audioUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_4.wav",
+      "imageUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_4.png"
     },
     {
       "id": 5,
@@ -53,8 +53,8 @@
       "summary": "Sustains All Life",
       "startTime": 34.71,
       "endTime": 42.32,
-      "audioUrl": "/generated/task_qr8q6xixq_scene_5.wav",
-      "imageUrl": "/generated/task_qr8q6xixq_scene_5.png"
+      "audioUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_5.wav",
+      "imageUrl": "https://raw.githubusercontent.com/manibrahmamkurakula/AI_video_explainer/main/task_qr8q6xixq_scene_5.png"
     }
   ]
 }

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Temp / Generated
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Large generated media (use Git LFS for these)
+# Uncomment below if you want to exclude large files locally:
+# *.wav
+# *.mp4
